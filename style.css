@@ -22,7 +22,19 @@ body{
 .top-bar{
     width: 100%;
     height: 150px;
+    display: flex;
+    flex-direction: column;
     border: 1px solid red;
+}
+.search-bar{
+    width: 100%;
+    height: 40%;
+    border: 1px solid black;
+}
+.actions-pannel{
+    width: 100%;
+    flex-grow: 1;
+    border: 1px solid yellow;
 }
 .grid-container{
     height: 100%;
@@ -37,5 +49,30 @@ body{
     border: 1px solid black;
 }
 .project-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid black;
+}
+.project-card{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid black;
+}
+.project-card h3{
+    margin-bottom: 20px;
+}
+.grid-right-pannel{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.announcements{
+    border: 1px solid red;
+}
+.trending{
+    border: 1px solid red;
 }
